@@ -1,5 +1,7 @@
 # results4.txt
 
+Zachary Neveu & Bobby Ky
+
 # Usage
 To run Knapsack for all input files, use `python run_knap.py 8 1025`. The final two parameters are the start and end range of sizes for which to run. Each instance only uses one processor core, so it is possible to run multiple ranges in parallel on multicore systems.
 
