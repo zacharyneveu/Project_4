@@ -247,6 +247,12 @@ vector <float> knapsack::getKnapsackVector(int i) {
 }
 
 
+/*
+ * Finds an optimistic LP bound on a knapsack instance by relaxing the integral
+ * constraint on selecting items. Sorts items by value/cost ratio, and includes
+ * first items that will fit, as well as part of the first item that doesn't fit.
+ * The optimal solution to the knapsack instance is guaranteed to be worse than or equal to this bound.
+ */
 float knapsack::bound() 
 {
 	// Placeholder

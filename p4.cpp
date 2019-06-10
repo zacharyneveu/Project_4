@@ -66,6 +66,11 @@ int main()
 
 }
 
+/*
+ * Uses a Branch and Bound technique based on DFS and an initial greedy
+ * solution to solve Knapsack instances.
+ * @param start: An empty knapsack instance to solve
+ */
 knapsack bnb(knapsack &start)
 {
 	//cout <<	"Starting bound: " << start.bound() << endl;
@@ -99,7 +104,6 @@ knapsack bnb(knapsack &start)
 			{
 				best = d.back();
 			}
-			//cout << "best value: " << best.getValue() << endl;
 			backtracking = true;
 		}
 		else //if not all items have been fixed yet
@@ -118,7 +122,6 @@ knapsack bnb(knapsack &start)
 				else
 				{
 					last.select(idx);
-					//cout << "Setting item "<<itnum << " and pushing to deque" << endl;
 					d.push_back(last);
 				}
 			}
@@ -126,15 +129,12 @@ knapsack bnb(knapsack &start)
 			{
 				if(itnum <= 0)
 					break;
-				//cout << "Backtracking" << endl;
-				//cout << "itnum: " <<itnum << endl;
 
 				knapsack last = d.back();
 				auto lastvec = start.getKnapsackVector(itnum-1);
 				auto lastidx = lastvec[0];
 				if(last.isSelected(lastidx))
 				{
-					//cout << "Unselecting "<< itnum-1 << endl;
 					last.unSelect(lastidx);
 					d.pop_back();
 					d.push_back(last);
@@ -142,12 +142,7 @@ knapsack bnb(knapsack &start)
 					// Explore if possibly good
 					if(last.bound() > best.getValue())
 					{
-						//cout << "Exploring branch from itnum: "<<itnum<<"with bound: " << last.bound() << endl;
 						backtracking = false;
-					}
-					else
-					{
-						//cout << "bound of "<<last.bound() << " <= "<< best.getValue() << endl;
 					}
 				}
 				else
