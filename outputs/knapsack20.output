@@ -1,0 +1,44 @@
+
+instances/knapsack20.input
+Reading knapsack instance
+Time (s): 1.7331
+------------------------------------------------
+Total value: 6258
+Total cost: 4858
+
+0  654 554
+1  101 1
+2  219 119
+4  287 187
+5  467 367
+8  122 22
+9  713 613
+10  447 347
+12  622 522
+13  222 122
+15  586 486
+17  923 823
+18  332 232
+19  563 463
+
+item 0: 1
+item 1: 1
+item 2: 1
+item 3: 0
+item 4: 1
+item 5: 1
+item 6: 0
+item 7: 0
+item 8: 1
+item 9: 1
+item 10: 1
+item 11: 0
+item 12: 1
+item 13: 1
+item 14: 0
+item 15: 1
+item 16: 0
+item 17: 1
+item 18: 1
+item 19: 1
+
