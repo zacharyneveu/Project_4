@@ -1,26 +1,26 @@
 Number of Colors: 4
-Best solution: 20 conflicts
+Best solution: 22 conflicts
 Node 1: 0
 Node 2: 0
-Node 3: 3
-Node 4: 1
-Node 5: 1
-Node 6: 3
-Node 7: 1
+Node 3: 2
+Node 4: 2
+Node 5: 3
+Node 6: 2
+Node 7: 0
 Node 8: 1
 Node 9: 1
-Node 10: 0
-Node 11: 2
+Node 10: 2
+Node 11: 1
 Node 12: 2
-Node 13: 2
-Node 14: 2
-Node 15: 1
+Node 13: 1
+Node 14: 1
+Node 15: 3
 Node 16: 0
-Node 17: 0
-Node 18: 3
-Node 19: 0
-Node 20: 0
-Node 21: 0
-Node 22: 2
+Node 17: 2
+Node 18: 0
+Node 19: 2
+Node 20: 2
+Node 21: 2
+Node 22: 1
 Node 23: 1
-Node 24: 0
+Node 24: 3
